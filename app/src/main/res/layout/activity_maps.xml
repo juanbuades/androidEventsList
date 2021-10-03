@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+    <TextView
+        android:id="@+id/newEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/nuevo_evento"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"/>
+    <EditText
+        android:id="@+id/etDateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Nombre del evento"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:id="@+id/etLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Direccion (calle, numero y poblacion)"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+    <Button
+        android:id="@+id/buttonAddPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREAR EVENTO"
+        android:onClick="sendInfoToMainActivity"/>
+    <Button
+        android:id="@+id/buttonCancelPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"/>
+
+</LinearLayout>
+
